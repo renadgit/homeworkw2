@@ -43,8 +43,7 @@ house.areas.bedroomOne.items.pop()
 // (4) Change the color of the car to blue.
 house.garage.car.color = 'blue'
 // (5) Add a another car to the garage with a honk function.
-house.garage.car2 = house.garage.car
-house.garage.car2.color = 'yellow'//------why does this change color in both cars?
+house.garage.car2 = { 'color' : 'yellow', wheels : 4, honk: ()=>{alert("beep car2")}}
 // (6) Make the new car honk.
 house.garage.car2.honk()
 // (7) Change the 'broken chair' in the kitchen to 'new chair'.
